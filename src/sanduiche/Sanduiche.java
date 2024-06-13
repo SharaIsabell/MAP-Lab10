@@ -33,13 +33,9 @@ public class Sanduiche {
 		return new PresuntoFrango();
 	}
 	
-	public void fazerSanduiche() {
-		pegaPao().fatiaPao();
-		pegaTomate().fatiasTomate();
-		pegaQueijo().fatiaQueijo();
-		pegaOvo().tipoOvo();
-		pegaPresunto().fatiaPresunto();
-		pegaPao().fatiaPao();
+	public String fazerSanduiche() {
+		return pegaPao().fatiaPao() + "\n" + pegaTomate().fatiasTomate() + "\n" + pegaQueijo().fatiaQueijo() + "\n"
+				+ pegaOvo().tipoOvo() + "\n" + pegaPresunto().fatiaPresunto() + "\n" + pegaPao().fatiaPao();
 	}
 
 }
